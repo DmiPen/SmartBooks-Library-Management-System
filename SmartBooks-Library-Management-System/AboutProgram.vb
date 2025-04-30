@@ -1,8 +1,8 @@
-﻿Public Class ViewRecords
+﻿Public Class AboutProgram
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnBack.Click
-        'Closes the current Form
+        'Closes current Form
         Me.Close()
-        'Opens Homepage Form
+        'Opens HomePage Form
         HomePage.Show()
     End Sub
 End Class

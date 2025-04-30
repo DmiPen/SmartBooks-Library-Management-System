@@ -73,6 +73,30 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutCompany.Designer.vb">
+      <DependentUpon>AboutCompany.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutCompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutProgram.Designer.vb">
+      <DependentUpon>AboutProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteRecords.Designer.vb">
+      <DependentUpon>DeleteRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditRecords.Designer.vb">
+      <DependentUpon>EditRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HomePage.Designer.vb">
       <DependentUpon>HomePage.vb</DependentUpon>
     </Compile>
@@ -122,6 +146,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AboutCompany.resx">
+      <DependentUpon>AboutCompany.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutProgram.resx">
+      <DependentUpon>AboutProgram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteRecords.resx">
+      <DependentUpon>DeleteRecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditRecords.resx">
+      <DependentUpon>EditRecords.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.vb</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +194,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\me.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

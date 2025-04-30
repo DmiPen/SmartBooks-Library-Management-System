@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class NewRecords
+Partial Class DeleteRecords
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -27,22 +27,22 @@ Partial Class NewRecords
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(22, 400)
+        Me.btnBack.Location = New System.Drawing.Point(13, 38)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(75, 23)
         Me.btnBack.TabIndex = 0
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
         '
-        'NewRecords
+        'DeleteRecords
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.btnBack)
-        Me.Name = "NewRecords"
+        Me.Name = "DeleteRecords"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "NewRecords"
+        Me.Text = "DeleteRecords"
         Me.ResumeLayout(False)
 
     End Sub

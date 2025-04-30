@@ -33,6 +33,8 @@ Partial Class HomePage
         Me.AboutProgramToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutCompanyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HowToToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -47,7 +49,7 @@ Partial Class HomePage
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewRecordsToolStripMenuItem, Me.ViewRecordsToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewRecordsToolStripMenuItem, Me.ViewRecordsToolStripMenuItem, Me.LogOutToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -84,15 +86,15 @@ Partial Class HomePage
         '
         Me.EditRecordToolStripMenuItem.Name = "EditRecordToolStripMenuItem"
         Me.EditRecordToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.EditRecordToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.EditRecordToolStripMenuItem.Text = "Edit Record"
+        Me.EditRecordToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.EditRecordToolStripMenuItem.Text = "Edit Records"
         '
         'DeleteRecordToolStripMenuItem
         '
         Me.DeleteRecordToolStripMenuItem.Name = "DeleteRecordToolStripMenuItem"
         Me.DeleteRecordToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D), System.Windows.Forms.Keys)
-        Me.DeleteRecordToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.DeleteRecordToolStripMenuItem.Text = "Delete Record"
+        Me.DeleteRecordToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.DeleteRecordToolStripMenuItem.Text = "Delete Records"
         '
         'AboutProgramToolStripMenuItem
         '
@@ -115,6 +117,20 @@ Partial Class HomePage
         Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(204, 22)
         Me.HowToToolStripMenuItem.Text = "How To"
         '
+        'LogOutToolStripMenuItem
+        '
+        Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
+        Me.LogOutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.L), System.Windows.Forms.Keys)
+        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.LogOutToolStripMenuItem.Text = "LogOut"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
+        '
         'HomePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -124,7 +140,7 @@ Partial Class HomePage
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "HomePage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "HomePage"
+        Me.Text = "Home Page"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -143,4 +159,6 @@ Partial Class HomePage
     Friend WithEvents AboutProgramToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutCompanyToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HowToToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LogOutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
 End Class
