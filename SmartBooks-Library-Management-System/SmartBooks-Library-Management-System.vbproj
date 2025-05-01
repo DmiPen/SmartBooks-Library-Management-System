@@ -103,6 +103,12 @@
     <Compile Include="HomePage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="How-To.Designer.vb">
+      <DependentUpon>How-To.vb</DependentUpon>
+    </Compile>
+    <Compile Include="How-To.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="How-To.resx">
+      <DependentUpon>How-To.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>

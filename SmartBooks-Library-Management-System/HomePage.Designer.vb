@@ -24,17 +24,25 @@ Partial Class HomePage
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewRecordsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViewRecordsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditRecordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeleteRecordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutProgramToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutCompanyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HowToToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnNewRecords = New System.Windows.Forms.Button()
+        Me.btnViewRecords = New System.Windows.Forms.Button()
+        Me.btnEditRecords = New System.Windows.Forms.Button()
+        Me.btnDeleteRecords = New System.Windows.Forms.Button()
+        Me.btnAboutProgram = New System.Windows.Forms.Button()
+        Me.btnAboutCompany = New System.Windows.Forms.Button()
+        Me.btnHowTo = New System.Windows.Forms.Button()
+        Me.btnLogout = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -54,20 +62,6 @@ Partial Class HomePage
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
-        'EditToolStripMenuItem
-        '
-        Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditRecordToolStripMenuItem, Me.DeleteRecordToolStripMenuItem})
-        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
-        Me.EditToolStripMenuItem.Text = "Edit"
-        '
-        'HelpToolStripMenuItem
-        '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutProgramToolStripMenuItem, Me.AboutCompanyToolStripMenuItem, Me.HowToToolStripMenuItem})
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.HelpToolStripMenuItem.Text = "Help"
-        '
         'NewRecordsToolStripMenuItem
         '
         Me.NewRecordsToolStripMenuItem.Name = "NewRecordsToolStripMenuItem"
@@ -82,6 +76,27 @@ Partial Class HomePage
         Me.ViewRecordsToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
         Me.ViewRecordsToolStripMenuItem.Text = "View Records"
         '
+        'LogOutToolStripMenuItem
+        '
+        Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
+        Me.LogOutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.L), System.Windows.Forms.Keys)
+        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.LogOutToolStripMenuItem.Text = "LogOut"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'EditToolStripMenuItem
+        '
+        Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditRecordToolStripMenuItem, Me.DeleteRecordToolStripMenuItem})
+        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
+        Me.EditToolStripMenuItem.Text = "Edit"
+        '
         'EditRecordToolStripMenuItem
         '
         Me.EditRecordToolStripMenuItem.Name = "EditRecordToolStripMenuItem"
@@ -95,6 +110,13 @@ Partial Class HomePage
         Me.DeleteRecordToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D), System.Windows.Forms.Keys)
         Me.DeleteRecordToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
         Me.DeleteRecordToolStripMenuItem.Text = "Delete Records"
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutProgramToolStripMenuItem, Me.AboutCompanyToolStripMenuItem, Me.HowToToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Text = "Help"
         '
         'AboutProgramToolStripMenuItem
         '
@@ -117,25 +139,91 @@ Partial Class HomePage
         Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(204, 22)
         Me.HowToToolStripMenuItem.Text = "How To"
         '
-        'LogOutToolStripMenuItem
+        'btnNewRecords
         '
-        Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
-        Me.LogOutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.L), System.Windows.Forms.Keys)
-        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
-        Me.LogOutToolStripMenuItem.Text = "LogOut"
+        Me.btnNewRecords.Location = New System.Drawing.Point(30, 112)
+        Me.btnNewRecords.Name = "btnNewRecords"
+        Me.btnNewRecords.Size = New System.Drawing.Size(75, 35)
+        Me.btnNewRecords.TabIndex = 1
+        Me.btnNewRecords.Text = "New Records"
+        Me.btnNewRecords.UseVisualStyleBackColor = True
         '
-        'ExitToolStripMenuItem
+        'btnViewRecords
         '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
+        Me.btnViewRecords.Location = New System.Drawing.Point(30, 188)
+        Me.btnViewRecords.Name = "btnViewRecords"
+        Me.btnViewRecords.Size = New System.Drawing.Size(75, 35)
+        Me.btnViewRecords.TabIndex = 2
+        Me.btnViewRecords.Text = "View Records"
+        Me.btnViewRecords.UseVisualStyleBackColor = True
+        '
+        'btnEditRecords
+        '
+        Me.btnEditRecords.Location = New System.Drawing.Point(304, 124)
+        Me.btnEditRecords.Name = "btnEditRecords"
+        Me.btnEditRecords.Size = New System.Drawing.Size(75, 35)
+        Me.btnEditRecords.TabIndex = 3
+        Me.btnEditRecords.Text = "Edit Records"
+        Me.btnEditRecords.UseVisualStyleBackColor = True
+        '
+        'btnDeleteRecords
+        '
+        Me.btnDeleteRecords.Location = New System.Drawing.Point(304, 188)
+        Me.btnDeleteRecords.Name = "btnDeleteRecords"
+        Me.btnDeleteRecords.Size = New System.Drawing.Size(75, 35)
+        Me.btnDeleteRecords.TabIndex = 4
+        Me.btnDeleteRecords.Text = "Delete Records"
+        Me.btnDeleteRecords.UseVisualStyleBackColor = True
+        '
+        'btnAboutProgram
+        '
+        Me.btnAboutProgram.Location = New System.Drawing.Point(587, 129)
+        Me.btnAboutProgram.Name = "btnAboutProgram"
+        Me.btnAboutProgram.Size = New System.Drawing.Size(75, 35)
+        Me.btnAboutProgram.TabIndex = 5
+        Me.btnAboutProgram.Text = "About Program"
+        Me.btnAboutProgram.UseVisualStyleBackColor = True
+        '
+        'btnAboutCompany
+        '
+        Me.btnAboutCompany.Location = New System.Drawing.Point(587, 188)
+        Me.btnAboutCompany.Name = "btnAboutCompany"
+        Me.btnAboutCompany.Size = New System.Drawing.Size(75, 35)
+        Me.btnAboutCompany.TabIndex = 6
+        Me.btnAboutCompany.Text = "About Company"
+        Me.btnAboutCompany.UseVisualStyleBackColor = True
+        '
+        'btnHowTo
+        '
+        Me.btnHowTo.Location = New System.Drawing.Point(159, 247)
+        Me.btnHowTo.Name = "btnHowTo"
+        Me.btnHowTo.Size = New System.Drawing.Size(75, 35)
+        Me.btnHowTo.TabIndex = 7
+        Me.btnHowTo.Text = "How-To"
+        Me.btnHowTo.UseVisualStyleBackColor = True
+        '
+        'btnLogout
+        '
+        Me.btnLogout.Location = New System.Drawing.Point(449, 247)
+        Me.btnLogout.Name = "btnLogout"
+        Me.btnLogout.Size = New System.Drawing.Size(75, 35)
+        Me.btnLogout.TabIndex = 8
+        Me.btnLogout.Text = "Logout"
+        Me.btnLogout.UseVisualStyleBackColor = True
         '
         'HomePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnLogout)
+        Me.Controls.Add(Me.btnHowTo)
+        Me.Controls.Add(Me.btnAboutCompany)
+        Me.Controls.Add(Me.btnAboutProgram)
+        Me.Controls.Add(Me.btnDeleteRecords)
+        Me.Controls.Add(Me.btnEditRecords)
+        Me.Controls.Add(Me.btnViewRecords)
+        Me.Controls.Add(Me.btnNewRecords)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "HomePage"
@@ -161,4 +249,12 @@ Partial Class HomePage
     Friend WithEvents HowToToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LogOutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents btnNewRecords As Button
+    Friend WithEvents btnViewRecords As Button
+    Friend WithEvents btnEditRecords As Button
+    Friend WithEvents btnDeleteRecords As Button
+    Friend WithEvents btnAboutProgram As Button
+    Friend WithEvents btnAboutCompany As Button
+    Friend WithEvents btnHowTo As Button
+    Friend WithEvents btnLogout As Button
 End Class
