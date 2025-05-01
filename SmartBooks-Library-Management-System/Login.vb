@@ -63,8 +63,8 @@ Public Class login
         End If
     End Sub
     Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
-        Dim registerForm As New UserRegistration()
-        registerForm.Show()
+        Dim regForm As New UserRegistration()
+        regForm.Show()
         Me.Hide()
     End Sub
 

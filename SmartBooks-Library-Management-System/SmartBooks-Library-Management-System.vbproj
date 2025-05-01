@@ -207,6 +207,9 @@
     <EmbeddedResource Include="NewRecords.resx">
       <DependentUpon>NewRecords.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserRegistration.resx">
+      <DependentUpon>UserRegistration.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewRecords.resx">
       <DependentUpon>ViewRecords.vb</DependentUpon>
     </EmbeddedResource>
