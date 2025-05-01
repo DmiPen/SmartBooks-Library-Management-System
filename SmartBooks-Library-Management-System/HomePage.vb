@@ -2,6 +2,8 @@
 'Date : April 29 2025
 'Title : Library Management System (Smart Books)
 Public Class HomePage
+
+
     Private Sub NewRecordsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewRecordsToolStripMenuItem.Click
         'Hides the current Form
         Me.Hide()
@@ -101,5 +103,9 @@ Public Class HomePage
         Me.Hide()
         'Opens Login Form
         Login.Show()
+    End Sub
+
+    Private Sub HomePage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

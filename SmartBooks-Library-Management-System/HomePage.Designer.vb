@@ -48,10 +48,11 @@ Partial Class HomePage
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1067, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -59,163 +60,171 @@ Partial Class HomePage
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewRecordsToolStripMenuItem, Me.ViewRecordsToolStripMenuItem, Me.LogOutToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(46, 24)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'NewRecordsToolStripMenuItem
         '
         Me.NewRecordsToolStripMenuItem.Name = "NewRecordsToolStripMenuItem"
         Me.NewRecordsToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.NewRecordsToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.NewRecordsToolStripMenuItem.Size = New System.Drawing.Size(232, 26)
         Me.NewRecordsToolStripMenuItem.Text = "New Records"
         '
         'ViewRecordsToolStripMenuItem
         '
         Me.ViewRecordsToolStripMenuItem.Name = "ViewRecordsToolStripMenuItem"
         Me.ViewRecordsToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.ViewRecordsToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.ViewRecordsToolStripMenuItem.Size = New System.Drawing.Size(232, 26)
         Me.ViewRecordsToolStripMenuItem.Text = "View Records"
         '
         'LogOutToolStripMenuItem
         '
         Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
         Me.LogOutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.L), System.Windows.Forms.Keys)
-        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(232, 26)
         Me.LogOutToolStripMenuItem.Text = "LogOut"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(232, 26)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditRecordToolStripMenuItem, Me.DeleteRecordToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(49, 24)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EditRecordToolStripMenuItem
         '
         Me.EditRecordToolStripMenuItem.Name = "EditRecordToolStripMenuItem"
         Me.EditRecordToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.EditRecordToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.EditRecordToolStripMenuItem.Size = New System.Drawing.Size(246, 26)
         Me.EditRecordToolStripMenuItem.Text = "Edit Records"
         '
         'DeleteRecordToolStripMenuItem
         '
         Me.DeleteRecordToolStripMenuItem.Name = "DeleteRecordToolStripMenuItem"
         Me.DeleteRecordToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D), System.Windows.Forms.Keys)
-        Me.DeleteRecordToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.DeleteRecordToolStripMenuItem.Size = New System.Drawing.Size(246, 26)
         Me.DeleteRecordToolStripMenuItem.Text = "Delete Records"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutProgramToolStripMenuItem, Me.AboutCompanyToolStripMenuItem, Me.HowToToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'AboutProgramToolStripMenuItem
         '
         Me.AboutProgramToolStripMenuItem.Name = "AboutProgramToolStripMenuItem"
         Me.AboutProgramToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.AboutProgramToolStripMenuItem.Size = New System.Drawing.Size(204, 22)
+        Me.AboutProgramToolStripMenuItem.Size = New System.Drawing.Size(251, 26)
         Me.AboutProgramToolStripMenuItem.Text = "About Program"
         '
         'AboutCompanyToolStripMenuItem
         '
         Me.AboutCompanyToolStripMenuItem.Name = "AboutCompanyToolStripMenuItem"
         Me.AboutCompanyToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.AboutCompanyToolStripMenuItem.Size = New System.Drawing.Size(204, 22)
+        Me.AboutCompanyToolStripMenuItem.Size = New System.Drawing.Size(251, 26)
         Me.AboutCompanyToolStripMenuItem.Text = "About Company"
         '
         'HowToToolStripMenuItem
         '
         Me.HowToToolStripMenuItem.Name = "HowToToolStripMenuItem"
         Me.HowToToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.H), System.Windows.Forms.Keys)
-        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(204, 22)
+        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(251, 26)
         Me.HowToToolStripMenuItem.Text = "How To"
         '
         'btnNewRecords
         '
-        Me.btnNewRecords.Location = New System.Drawing.Point(30, 112)
+        Me.btnNewRecords.Location = New System.Drawing.Point(40, 138)
+        Me.btnNewRecords.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnNewRecords.Name = "btnNewRecords"
-        Me.btnNewRecords.Size = New System.Drawing.Size(75, 35)
+        Me.btnNewRecords.Size = New System.Drawing.Size(100, 43)
         Me.btnNewRecords.TabIndex = 1
         Me.btnNewRecords.Text = "New Records"
         Me.btnNewRecords.UseVisualStyleBackColor = True
         '
         'btnViewRecords
         '
-        Me.btnViewRecords.Location = New System.Drawing.Point(30, 188)
+        Me.btnViewRecords.Location = New System.Drawing.Point(40, 231)
+        Me.btnViewRecords.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnViewRecords.Name = "btnViewRecords"
-        Me.btnViewRecords.Size = New System.Drawing.Size(75, 35)
+        Me.btnViewRecords.Size = New System.Drawing.Size(100, 43)
         Me.btnViewRecords.TabIndex = 2
         Me.btnViewRecords.Text = "View Records"
         Me.btnViewRecords.UseVisualStyleBackColor = True
         '
         'btnEditRecords
         '
-        Me.btnEditRecords.Location = New System.Drawing.Point(304, 124)
+        Me.btnEditRecords.Location = New System.Drawing.Point(405, 153)
+        Me.btnEditRecords.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnEditRecords.Name = "btnEditRecords"
-        Me.btnEditRecords.Size = New System.Drawing.Size(75, 35)
+        Me.btnEditRecords.Size = New System.Drawing.Size(100, 43)
         Me.btnEditRecords.TabIndex = 3
         Me.btnEditRecords.Text = "Edit Records"
         Me.btnEditRecords.UseVisualStyleBackColor = True
         '
         'btnDeleteRecords
         '
-        Me.btnDeleteRecords.Location = New System.Drawing.Point(304, 188)
+        Me.btnDeleteRecords.Location = New System.Drawing.Point(405, 231)
+        Me.btnDeleteRecords.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnDeleteRecords.Name = "btnDeleteRecords"
-        Me.btnDeleteRecords.Size = New System.Drawing.Size(75, 35)
+        Me.btnDeleteRecords.Size = New System.Drawing.Size(100, 43)
         Me.btnDeleteRecords.TabIndex = 4
         Me.btnDeleteRecords.Text = "Delete Records"
         Me.btnDeleteRecords.UseVisualStyleBackColor = True
         '
         'btnAboutProgram
         '
-        Me.btnAboutProgram.Location = New System.Drawing.Point(587, 129)
+        Me.btnAboutProgram.Location = New System.Drawing.Point(783, 159)
+        Me.btnAboutProgram.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAboutProgram.Name = "btnAboutProgram"
-        Me.btnAboutProgram.Size = New System.Drawing.Size(75, 35)
+        Me.btnAboutProgram.Size = New System.Drawing.Size(100, 43)
         Me.btnAboutProgram.TabIndex = 5
         Me.btnAboutProgram.Text = "About Program"
         Me.btnAboutProgram.UseVisualStyleBackColor = True
         '
         'btnAboutCompany
         '
-        Me.btnAboutCompany.Location = New System.Drawing.Point(587, 188)
+        Me.btnAboutCompany.Location = New System.Drawing.Point(783, 231)
+        Me.btnAboutCompany.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAboutCompany.Name = "btnAboutCompany"
-        Me.btnAboutCompany.Size = New System.Drawing.Size(75, 35)
+        Me.btnAboutCompany.Size = New System.Drawing.Size(100, 43)
         Me.btnAboutCompany.TabIndex = 6
         Me.btnAboutCompany.Text = "About Company"
         Me.btnAboutCompany.UseVisualStyleBackColor = True
         '
         'btnHowTo
         '
-        Me.btnHowTo.Location = New System.Drawing.Point(159, 247)
+        Me.btnHowTo.Location = New System.Drawing.Point(212, 304)
+        Me.btnHowTo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnHowTo.Name = "btnHowTo"
-        Me.btnHowTo.Size = New System.Drawing.Size(75, 35)
+        Me.btnHowTo.Size = New System.Drawing.Size(100, 43)
         Me.btnHowTo.TabIndex = 7
         Me.btnHowTo.Text = "How-To"
         Me.btnHowTo.UseVisualStyleBackColor = True
         '
         'btnLogout
         '
-        Me.btnLogout.Location = New System.Drawing.Point(449, 247)
+        Me.btnLogout.Location = New System.Drawing.Point(609, 314)
+        Me.btnLogout.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(75, 35)
+        Me.btnLogout.Size = New System.Drawing.Size(100, 43)
         Me.btnLogout.TabIndex = 8
         Me.btnLogout.Text = "Logout"
         Me.btnLogout.UseVisualStyleBackColor = True
         '
         'HomePage
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnHowTo)
         Me.Controls.Add(Me.btnAboutCompany)
@@ -226,6 +235,7 @@ Partial Class HomePage
         Me.Controls.Add(Me.btnNewRecords)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "HomePage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Home Page"
