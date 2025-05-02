@@ -7,6 +7,16 @@ Public Class login
     Private ReadOnly _usersAdapter As New UsersTableAdapter()
     Private ReadOnly _usersTable As New SmartBooksDataSet.UsersDataTable()
 
+    Private Sub login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' ── Point the adapter at your project’s MDF, not the bin\Debug copy ──
+        _usersAdapter.Connection.ConnectionString =
+            "Data Source=(LocalDB)\MSSQLLocalDB;" &
+            "AttachDbFilename=C:\Users\descl\Source\Repos\" &
+            "SmartBooks-Library-Management-System\SmartBooks-Library-Management-System\" &
+            "LibraryManagement.mdf;" &
+            "Integrated Security=True"
+    End Sub
+
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Dim uname = txtUsername.Text.Trim()
         Dim pwd = txtPassword.Text
@@ -19,7 +29,9 @@ Public Class login
 
         Try
             ' Fetch the user by username
+            _usersTable.Clear()
             _usersAdapter.FillByUsername(_usersTable, uname)
+
             If _usersTable.Rows.Count = 0 Then
                 MessageBox.Show("Username not found.", "Login Failed",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -55,6 +67,12 @@ Public Class login
         End Try
     End Sub
 
+    Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
+        Dim regForm As New UserRegistration()
+        regForm.Show()
+        Me.Hide()
+    End Sub
+
     ' Ensure application only exits when login is closed and no other forms remain
     Protected Overrides Sub OnFormClosed(e As FormClosedEventArgs)
         MyBase.OnFormClosed(e)
@@ -62,10 +80,4 @@ Public Class login
             Application.Exit()
         End If
     End Sub
-    Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
-        Dim regForm As New UserRegistration()
-        regForm.Show()
-        Me.Hide()
-    End Sub
-
 End Class

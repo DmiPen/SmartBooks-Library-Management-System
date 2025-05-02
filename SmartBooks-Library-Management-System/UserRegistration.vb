@@ -4,18 +4,17 @@ Imports SmartBooks_Library_Management_System.SmartBooksDataSetTableAdapters
 Public Class UserRegistration
     Inherits Form
 
-    ' Use a single, internally managed UsersTableAdapter
+    ' Single UsersTableAdapter instance
     Private ReadOnly _usersAdapter As New UsersTableAdapter()
-    Private usersAdapter As UsersTableAdapter
 
-    ' No custom constructor needed—this default one calls InitializeComponent()
-    Public Sub New()
-        InitializeComponent()
-    End Sub
-
-    Public Sub New(usersAdapter As UsersTableAdapter, components As Container)
-        Me.usersAdapter = usersAdapter
-        Me.components = components
+    Private Sub UserRegistration_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Point adapter at your persistent MDF
+        _usersAdapter.Connection.ConnectionString =
+            "Data Source=(LocalDB)\MSSQLLocalDB;" &
+            "AttachDbFilename=C:\Users\descl\Source\Repos\" &
+            "SmartBooks-Library-Management-System\SmartBooks-Library-Management-System\" &
+            "LibraryManagement.mdf;" &
+            "Integrated Security=True"
     End Sub
 
     Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
@@ -38,13 +37,13 @@ Public Class UserRegistration
             Return
         End If
 
-        ' Register new user (AccessLevel defaults to "User", IsActive is False)
+        ' Insert new user as Standard & Inactive
         Try
-            _usersAdapter.Insert(uname, pwd, fullName, "User", False)
+            _usersAdapter.Insert(uname, pwd, fullName, "Standard", False)
             MessageBox.Show("Registration successful! Waiting for admin activation.", "Success",
                             MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-            ' Return to login form
+            ' Return to login
             Dim loginForm As New login()
             loginForm.Show()
             Me.Close()
@@ -53,4 +52,5 @@ Public Class UserRegistration
                             MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
 End Class

@@ -43,6 +43,7 @@ Partial Class HomePage
         Me.btnAboutCompany = New System.Windows.Forms.Button()
         Me.btnHowTo = New System.Windows.Forms.Button()
         Me.btnLogout = New System.Windows.Forms.Button()
+        Me.btnAdminPanel = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -220,11 +221,21 @@ Partial Class HomePage
         Me.btnLogout.Text = "Logout"
         Me.btnLogout.UseVisualStyleBackColor = True
         '
+        'btnAdminPanel
+        '
+        Me.btnAdminPanel.Location = New System.Drawing.Point(183, 63)
+        Me.btnAdminPanel.Name = "btnAdminPanel"
+        Me.btnAdminPanel.Size = New System.Drawing.Size(100, 42)
+        Me.btnAdminPanel.TabIndex = 9
+        Me.btnAdminPanel.Text = "AdminPanel"
+        Me.btnAdminPanel.UseVisualStyleBackColor = True
+        '
         'HomePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.Controls.Add(Me.btnAdminPanel)
         Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnHowTo)
         Me.Controls.Add(Me.btnAboutCompany)
@@ -267,4 +278,5 @@ Partial Class HomePage
     Friend WithEvents btnAboutCompany As Button
     Friend WithEvents btnHowTo As Button
     Friend WithEvents btnLogout As Button
+    Friend WithEvents btnAdminPanel As Button
 End Class
