@@ -132,7 +132,7 @@ Partial Class NewRecords
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(39, 163)
+        Me.Label2.Location = New System.Drawing.Point(40, 163)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(91, 17)
         Me.Label2.TabIndex = 11
@@ -161,9 +161,9 @@ Partial Class NewRecords
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(39, 330)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(80, 17)
+        Me.Label5.Size = New System.Drawing.Size(66, 17)
         Me.Label5.TabIndex = 14
-        Me.Label5.Text = "Caregorytxt"
+        Me.Label5.Text = "Caregory"
         '
         'Label6
         '
@@ -179,9 +179,9 @@ Partial Class NewRecords
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(40, 456)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(65, 17)
+        Me.Label7.Size = New System.Drawing.Size(55, 17)
         Me.Label7.TabIndex = 16
-        Me.Label7.Text = "UserIDtxt"
+        Me.Label7.Text = "User ID"
         '
         'NewRecords
         '

@@ -143,8 +143,8 @@ Partial Class HomePage
         '
         'btnNewRecords
         '
-        Me.btnNewRecords.Location = New System.Drawing.Point(40, 138)
-        Me.btnNewRecords.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnNewRecords.Location = New System.Drawing.Point(847, 246)
+        Me.btnNewRecords.Margin = New System.Windows.Forms.Padding(4)
         Me.btnNewRecords.Name = "btnNewRecords"
         Me.btnNewRecords.Size = New System.Drawing.Size(100, 43)
         Me.btnNewRecords.TabIndex = 1
@@ -153,8 +153,8 @@ Partial Class HomePage
         '
         'btnViewRecords
         '
-        Me.btnViewRecords.Location = New System.Drawing.Point(40, 231)
-        Me.btnViewRecords.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnViewRecords.Location = New System.Drawing.Point(459, 58)
+        Me.btnViewRecords.Margin = New System.Windows.Forms.Padding(4)
         Me.btnViewRecords.Name = "btnViewRecords"
         Me.btnViewRecords.Size = New System.Drawing.Size(100, 43)
         Me.btnViewRecords.TabIndex = 2
@@ -163,8 +163,8 @@ Partial Class HomePage
         '
         'btnEditRecords
         '
-        Me.btnEditRecords.Location = New System.Drawing.Point(405, 153)
-        Me.btnEditRecords.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnEditRecords.Location = New System.Drawing.Point(40, 246)
+        Me.btnEditRecords.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEditRecords.Name = "btnEditRecords"
         Me.btnEditRecords.Size = New System.Drawing.Size(100, 43)
         Me.btnEditRecords.TabIndex = 3
@@ -173,8 +173,8 @@ Partial Class HomePage
         '
         'btnDeleteRecords
         '
-        Me.btnDeleteRecords.Location = New System.Drawing.Point(405, 231)
-        Me.btnDeleteRecords.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnDeleteRecords.Location = New System.Drawing.Point(459, 246)
+        Me.btnDeleteRecords.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDeleteRecords.Name = "btnDeleteRecords"
         Me.btnDeleteRecords.Size = New System.Drawing.Size(100, 43)
         Me.btnDeleteRecords.TabIndex = 4
@@ -183,8 +183,8 @@ Partial Class HomePage
         '
         'btnAboutProgram
         '
-        Me.btnAboutProgram.Location = New System.Drawing.Point(783, 159)
-        Me.btnAboutProgram.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAboutProgram.Location = New System.Drawing.Point(847, 159)
+        Me.btnAboutProgram.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAboutProgram.Name = "btnAboutProgram"
         Me.btnAboutProgram.Size = New System.Drawing.Size(100, 43)
         Me.btnAboutProgram.TabIndex = 5
@@ -193,8 +193,8 @@ Partial Class HomePage
         '
         'btnAboutCompany
         '
-        Me.btnAboutCompany.Location = New System.Drawing.Point(783, 231)
-        Me.btnAboutCompany.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAboutCompany.Location = New System.Drawing.Point(40, 159)
+        Me.btnAboutCompany.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAboutCompany.Name = "btnAboutCompany"
         Me.btnAboutCompany.Size = New System.Drawing.Size(100, 43)
         Me.btnAboutCompany.TabIndex = 6
@@ -203,8 +203,8 @@ Partial Class HomePage
         '
         'btnHowTo
         '
-        Me.btnHowTo.Location = New System.Drawing.Point(212, 304)
-        Me.btnHowTo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnHowTo.Location = New System.Drawing.Point(235, 304)
+        Me.btnHowTo.Margin = New System.Windows.Forms.Padding(4)
         Me.btnHowTo.Name = "btnHowTo"
         Me.btnHowTo.Size = New System.Drawing.Size(100, 43)
         Me.btnHowTo.TabIndex = 7
@@ -213,8 +213,8 @@ Partial Class HomePage
         '
         'btnLogout
         '
-        Me.btnLogout.Location = New System.Drawing.Point(609, 314)
-        Me.btnLogout.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnLogout.Location = New System.Drawing.Point(663, 304)
+        Me.btnLogout.Margin = New System.Windows.Forms.Padding(4)
         Me.btnLogout.Name = "btnLogout"
         Me.btnLogout.Size = New System.Drawing.Size(100, 43)
         Me.btnLogout.TabIndex = 8
@@ -223,7 +223,7 @@ Partial Class HomePage
         '
         'btnAdminPanel
         '
-        Me.btnAdminPanel.Location = New System.Drawing.Point(183, 63)
+        Me.btnAdminPanel.Location = New System.Drawing.Point(459, 160)
         Me.btnAdminPanel.Name = "btnAdminPanel"
         Me.btnAdminPanel.Size = New System.Drawing.Size(100, 42)
         Me.btnAdminPanel.TabIndex = 9
@@ -246,7 +246,7 @@ Partial Class HomePage
         Me.Controls.Add(Me.btnNewRecords)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "HomePage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Home Page"
