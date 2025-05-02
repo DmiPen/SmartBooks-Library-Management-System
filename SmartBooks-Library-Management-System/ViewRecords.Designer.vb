@@ -23,31 +23,59 @@ Partial Class ViewRecords
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.RecordsDGV = New System.Windows.Forms.DataGridView()
+        Me.btnRefresh = New System.Windows.Forms.Button()
+        CType(Me.RecordsDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnBack
         '
         Me.btnBack.Location = New System.Drawing.Point(37, 508)
-        Me.btnBack.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(100, 28)
         Me.btnBack.TabIndex = 0
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
         '
+        'RecordsDGV
+        '
+        Me.RecordsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.RecordsDGV.Location = New System.Drawing.Point(91, 12)
+        Me.RecordsDGV.Name = "RecordsDGV"
+        Me.RecordsDGV.RowHeadersWidth = 51
+        Me.RecordsDGV.RowTemplate.Height = 24
+        Me.RecordsDGV.Size = New System.Drawing.Size(863, 388)
+        Me.RecordsDGV.TabIndex = 1
+        '
+        'btnRefresh
+        '
+        Me.btnRefresh.Location = New System.Drawing.Point(489, 472)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(75, 23)
+        Me.btnRefresh.TabIndex = 2
+        Me.btnRefresh.Text = "Refresh"
+        Me.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnRefresh.UseVisualStyleBackColor = True
+        '
         'ViewRecords
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.Controls.Add(Me.btnRefresh)
+        Me.Controls.Add(Me.RecordsDGV)
         Me.Controls.Add(Me.btnBack)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "ViewRecords"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ViewRecords"
+        CType(Me.RecordsDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents btnBack As Button
+    Friend WithEvents RecordsDGV As DataGridView
+    Friend WithEvents btnRefresh As Button
 End Class
