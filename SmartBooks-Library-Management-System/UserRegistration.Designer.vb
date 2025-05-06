@@ -39,7 +39,7 @@ Partial Class UserRegistration
         '
         Me.btnBackToLogin.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
         Me.btnBackToLogin.Location = New System.Drawing.Point(79, 369)
-        Me.btnBackToLogin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnBackToLogin.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBackToLogin.Name = "btnBackToLogin"
         Me.btnBackToLogin.Size = New System.Drawing.Size(120, 28)
         Me.btnBackToLogin.TabIndex = 0
@@ -71,7 +71,7 @@ Partial Class UserRegistration
         'txtUsername
         '
         Me.txtUsername.Location = New System.Drawing.Point(79, 196)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(194, 20)
         Me.txtUsername.TabIndex = 3
@@ -79,7 +79,7 @@ Partial Class UserRegistration
         'txtPassword
         '
         Me.txtPassword.Location = New System.Drawing.Point(79, 259)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(194, 20)
         Me.txtPassword.TabIndex = 4
@@ -87,7 +87,7 @@ Partial Class UserRegistration
         'txtFullName
         '
         Me.txtFullName.Location = New System.Drawing.Point(79, 327)
-        Me.txtFullName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtFullName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFullName.Name = "txtFullName"
         Me.txtFullName.Size = New System.Drawing.Size(194, 20)
         Me.txtFullName.TabIndex = 5
@@ -107,7 +107,7 @@ Partial Class UserRegistration
         '
         Me.btnRegister.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
         Me.btnRegister.Location = New System.Drawing.Point(203, 369)
-        Me.btnRegister.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRegister.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRegister.Name = "btnRegister"
         Me.btnRegister.Size = New System.Drawing.Size(70, 28)
         Me.btnRegister.TabIndex = 7
@@ -140,7 +140,7 @@ Partial Class UserRegistration
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnBackToLogin)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "UserRegistration"
         Me.Text = "UserRegistration"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

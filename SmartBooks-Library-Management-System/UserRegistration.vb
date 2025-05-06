@@ -51,4 +51,8 @@ Public Class UserRegistration
         End Try
     End Sub
 
+    Private Sub btnBackToLogin_Click(sender As Object, e As EventArgs) Handles btnBackToLogin.Click
+        login.Show()
+        Me.Close()
+    End Sub
 End Class
