@@ -22,6 +22,7 @@ Partial Class DeleteRecords
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DeleteRecords))
         Me.btnBack = New System.Windows.Forms.Button()
         Me.RecordsDGV = New System.Windows.Forms.DataGridView()
         Me.btnDelete = New System.Windows.Forms.Button()
@@ -43,7 +44,7 @@ Partial Class DeleteRecords
         '
         Me.RecordsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.RecordsDGV.Location = New System.Drawing.Point(11, 11)
-        Me.RecordsDGV.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RecordsDGV.Margin = New System.Windows.Forms.Padding(2)
         Me.RecordsDGV.Name = "RecordsDGV"
         Me.RecordsDGV.RowHeadersWidth = 51
         Me.RecordsDGV.RowTemplate.Height = 24
@@ -55,7 +56,7 @@ Partial Class DeleteRecords
         Me.btnDelete.BackColor = System.Drawing.Color.MistyRose
         Me.btnDelete.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.Location = New System.Drawing.Point(410, 454)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(77, 28)
         Me.btnDelete.TabIndex = 2
@@ -66,7 +67,7 @@ Partial Class DeleteRecords
         '
         Me.btnRefresh.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefresh.Location = New System.Drawing.Point(329, 454)
-        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(77, 28)
         Me.btnRefresh.TabIndex = 3
@@ -83,6 +84,7 @@ Partial Class DeleteRecords
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.RecordsDGV)
         Me.Controls.Add(Me.btnBack)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "DeleteRecords"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "DeleteRecords"

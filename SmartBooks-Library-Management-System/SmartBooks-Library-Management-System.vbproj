@@ -266,6 +266,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>LibraryManagement.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\WhatsApp Image 2025-05-06 at 8.43.10 AM.jpeg" />
     <None Include="Resources\table_eye_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
     <None Include="Resources\table_edit_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
     <None Include="Resources\manage_accounts_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />

@@ -22,6 +22,7 @@ Partial Class EditRecords
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EditRecords))
         Me.btnBack = New System.Windows.Forms.Button()
         Me.RecordsDGV = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -57,7 +58,7 @@ Partial Class EditRecords
         '
         Me.RecordsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.RecordsDGV.Location = New System.Drawing.Point(265, 11)
-        Me.RecordsDGV.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RecordsDGV.Margin = New System.Windows.Forms.Padding(2)
         Me.RecordsDGV.Name = "RecordsDGV"
         Me.RecordsDGV.RowHeadersWidth = 51
         Me.RecordsDGV.RowTemplate.Height = 24
@@ -144,7 +145,7 @@ Partial Class EditRecords
         'BookTitletxt
         '
         Me.BookTitletxt.Location = New System.Drawing.Point(132, 11)
-        Me.BookTitletxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BookTitletxt.Margin = New System.Windows.Forms.Padding(2)
         Me.BookTitletxt.Name = "BookTitletxt"
         Me.BookTitletxt.Size = New System.Drawing.Size(119, 20)
         Me.BookTitletxt.TabIndex = 9
@@ -152,7 +153,7 @@ Partial Class EditRecords
         'AuthorNametxt
         '
         Me.AuthorNametxt.Location = New System.Drawing.Point(132, 35)
-        Me.AuthorNametxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.AuthorNametxt.Margin = New System.Windows.Forms.Padding(2)
         Me.AuthorNametxt.Name = "AuthorNametxt"
         Me.AuthorNametxt.Size = New System.Drawing.Size(119, 20)
         Me.AuthorNametxt.TabIndex = 10
@@ -160,7 +161,7 @@ Partial Class EditRecords
         'ISBNtxt
         '
         Me.ISBNtxt.Location = New System.Drawing.Point(132, 59)
-        Me.ISBNtxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ISBNtxt.Margin = New System.Windows.Forms.Padding(2)
         Me.ISBNtxt.Name = "ISBNtxt"
         Me.ISBNtxt.Size = New System.Drawing.Size(119, 20)
         Me.ISBNtxt.TabIndex = 11
@@ -168,7 +169,7 @@ Partial Class EditRecords
         'PublishedDatetxt
         '
         Me.PublishedDatetxt.Location = New System.Drawing.Point(132, 83)
-        Me.PublishedDatetxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PublishedDatetxt.Margin = New System.Windows.Forms.Padding(2)
         Me.PublishedDatetxt.Name = "PublishedDatetxt"
         Me.PublishedDatetxt.Size = New System.Drawing.Size(119, 20)
         Me.PublishedDatetxt.TabIndex = 12
@@ -176,7 +177,7 @@ Partial Class EditRecords
         'Caregorytxt
         '
         Me.Caregorytxt.Location = New System.Drawing.Point(132, 107)
-        Me.Caregorytxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Caregorytxt.Margin = New System.Windows.Forms.Padding(2)
         Me.Caregorytxt.Name = "Caregorytxt"
         Me.Caregorytxt.Size = New System.Drawing.Size(119, 20)
         Me.Caregorytxt.TabIndex = 13
@@ -184,7 +185,7 @@ Partial Class EditRecords
         'Quantitytxt
         '
         Me.Quantitytxt.Location = New System.Drawing.Point(132, 131)
-        Me.Quantitytxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Quantitytxt.Margin = New System.Windows.Forms.Padding(2)
         Me.Quantitytxt.Name = "Quantitytxt"
         Me.Quantitytxt.Size = New System.Drawing.Size(119, 20)
         Me.Quantitytxt.TabIndex = 14
@@ -192,7 +193,7 @@ Partial Class EditRecords
         'UserIDtxt
         '
         Me.UserIDtxt.Location = New System.Drawing.Point(132, 155)
-        Me.UserIDtxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.UserIDtxt.Margin = New System.Windows.Forms.Padding(2)
         Me.UserIDtxt.Name = "UserIDtxt"
         Me.UserIDtxt.Size = New System.Drawing.Size(119, 20)
         Me.UserIDtxt.TabIndex = 15
@@ -201,7 +202,7 @@ Partial Class EditRecords
         '
         Me.btnRefresh.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
         Me.btnRefresh.Location = New System.Drawing.Point(83, 286)
-        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(77, 28)
         Me.btnRefresh.TabIndex = 16
@@ -213,7 +214,7 @@ Partial Class EditRecords
         Me.btnUpdate.BackColor = System.Drawing.Color.Honeydew
         Me.btnUpdate.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
         Me.btnUpdate.Location = New System.Drawing.Point(164, 287)
-        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(77, 28)
         Me.btnUpdate.TabIndex = 17
@@ -244,6 +245,7 @@ Partial Class EditRecords
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.RecordsDGV)
         Me.Controls.Add(Me.btnBack)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EditRecords"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "EditRecords"

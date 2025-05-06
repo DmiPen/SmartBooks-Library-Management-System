@@ -98,9 +98,11 @@ Partial Class AboutCompany
         '
         'pbxWebDeveloper
         '
+        Me.pbxWebDeveloper.Image = Global.SmartBooks_Library_Management_System.My.Resources.Resources.WhatsApp_Image_2025_05_06_at_8_43_10_AM
         Me.pbxWebDeveloper.Location = New System.Drawing.Point(330, 57)
         Me.pbxWebDeveloper.Name = "pbxWebDeveloper"
         Me.pbxWebDeveloper.Size = New System.Drawing.Size(100, 107)
+        Me.pbxWebDeveloper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pbxWebDeveloper.TabIndex = 2
         Me.pbxWebDeveloper.TabStop = False
         '
@@ -115,10 +117,12 @@ Partial Class AboutCompany
         'pbxManager
         '
         Me.pbxManager.BackgroundImage = Global.SmartBooks_Library_Management_System.My.Resources.Resources._me
-        Me.pbxManager.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxManager.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.pbxManager.Image = Global.SmartBooks_Library_Management_System.My.Resources.Resources._me
         Me.pbxManager.Location = New System.Drawing.Point(22, 57)
         Me.pbxManager.Name = "pbxManager"
         Me.pbxManager.Size = New System.Drawing.Size(100, 107)
+        Me.pbxManager.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pbxManager.TabIndex = 0
         Me.pbxManager.TabStop = False
         '
@@ -126,7 +130,8 @@ Partial Class AboutCompany
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 342)
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.ClientSize = New System.Drawing.Size(630, 336)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.lblDatabaseAdministrator)
         Me.Controls.Add(Me.lblWebDeveloper)
