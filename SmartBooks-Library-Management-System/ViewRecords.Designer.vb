@@ -22,6 +22,7 @@ Partial Class ViewRecords
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ViewRecords))
         Me.btnBack = New System.Windows.Forms.Button()
         Me.RecordsDGV = New System.Windows.Forms.DataGridView()
         Me.btnRefresh = New System.Windows.Forms.Button()
@@ -30,10 +31,9 @@ Partial Class ViewRecords
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(37, 508)
-        Me.btnBack.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBack.Location = New System.Drawing.Point(12, 410)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(100, 28)
+        Me.btnBack.Size = New System.Drawing.Size(56, 28)
         Me.btnBack.TabIndex = 0
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
@@ -41,32 +41,35 @@ Partial Class ViewRecords
         'RecordsDGV
         '
         Me.RecordsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.RecordsDGV.Location = New System.Drawing.Point(91, 12)
+        Me.RecordsDGV.Location = New System.Drawing.Point(11, 11)
+        Me.RecordsDGV.Margin = New System.Windows.Forms.Padding(2)
         Me.RecordsDGV.Name = "RecordsDGV"
         Me.RecordsDGV.RowHeadersWidth = 51
         Me.RecordsDGV.RowTemplate.Height = 24
-        Me.RecordsDGV.Size = New System.Drawing.Size(863, 388)
+        Me.RecordsDGV.Size = New System.Drawing.Size(644, 394)
         Me.RecordsDGV.TabIndex = 1
         '
         'btnRefresh
         '
-        Me.btnRefresh.Location = New System.Drawing.Point(489, 472)
+        Me.btnRefresh.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRefresh.Location = New System.Drawing.Point(578, 409)
+        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRefresh.Name = "btnRefresh"
-        Me.btnRefresh.Size = New System.Drawing.Size(75, 23)
+        Me.btnRefresh.Size = New System.Drawing.Size(77, 28)
         Me.btnRefresh.TabIndex = 2
         Me.btnRefresh.Text = "Refresh"
-        Me.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnRefresh.UseVisualStyleBackColor = True
         '
         'ViewRecords
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ClientSize = New System.Drawing.Size(666, 450)
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.RecordsDGV)
         Me.Controls.Add(Me.btnBack)
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ViewRecords"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ViewRecords"

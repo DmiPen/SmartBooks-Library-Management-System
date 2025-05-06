@@ -266,6 +266,19 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>LibraryManagement.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\WhatsApp Image 2025-05-06 at 8.43.10 AM.jpeg" />
+    <None Include="Resources\table_eye_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\table_edit_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\manage_accounts_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\bg.png" />
+    <None Include="Resources\logout_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\help_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\domain_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\book_5_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\delete_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\info_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
+    <Content Include="Resources\MainIcoo.png" />
+    <None Include="Resources\MainIcoo1.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

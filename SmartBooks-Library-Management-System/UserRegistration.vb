@@ -11,9 +11,7 @@ Public Class UserRegistration
         ' Point adapter at your persistent MDF
         _usersAdapter.Connection.ConnectionString =
             "Data Source=(LocalDB)\MSSQLLocalDB;" &
-            "AttachDbFilename=C:\Users\descl\Source\Repos\" &
-            "SmartBooks-Library-Management-System\SmartBooks-Library-Management-System\" &
-            "LibraryManagement.mdf;" &
+            "AttachDbFilename=|DataDirectory|\LibraryManagement.mdf;" &
             "Integrated Security=True"
     End Sub
 

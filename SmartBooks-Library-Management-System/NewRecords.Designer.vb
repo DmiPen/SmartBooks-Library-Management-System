@@ -44,10 +44,10 @@ Partial Class NewRecords
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(13, 591)
-        Me.btnBack.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBack.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
+        Me.btnBack.Location = New System.Drawing.Point(12, 286)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(100, 28)
+        Me.btnBack.Size = New System.Drawing.Size(56, 28)
         Me.btnBack.TabIndex = 0
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
@@ -55,139 +55,165 @@ Partial Class NewRecords
         'RecordsDGV
         '
         Me.RecordsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.RecordsDGV.Location = New System.Drawing.Point(356, 109)
+        Me.RecordsDGV.Location = New System.Drawing.Point(265, 11)
+        Me.RecordsDGV.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.RecordsDGV.Name = "RecordsDGV"
         Me.RecordsDGV.RowHeadersWidth = 51
         Me.RecordsDGV.RowTemplate.Height = 24
-        Me.RecordsDGV.Size = New System.Drawing.Size(751, 364)
+        Me.RecordsDGV.Size = New System.Drawing.Size(563, 296)
         Me.RecordsDGV.TabIndex = 1
         '
         'btnInsert
         '
-        Me.btnInsert.Location = New System.Drawing.Point(701, 560)
+        Me.btnInsert.BackColor = System.Drawing.Color.LightCyan
+        Me.btnInsert.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
+        Me.btnInsert.Location = New System.Drawing.Point(168, 287)
+        Me.btnInsert.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnInsert.Name = "btnInsert"
-        Me.btnInsert.Size = New System.Drawing.Size(75, 23)
+        Me.btnInsert.Size = New System.Drawing.Size(77, 28)
         Me.btnInsert.TabIndex = 2
         Me.btnInsert.Text = "Insert"
-        Me.btnInsert.UseVisualStyleBackColor = True
+        Me.btnInsert.UseVisualStyleBackColor = False
         '
         'BookTitletxt
         '
-        Me.BookTitletxt.Location = New System.Drawing.Point(225, 104)
+        Me.BookTitletxt.Location = New System.Drawing.Point(132, 11)
+        Me.BookTitletxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BookTitletxt.Name = "BookTitletxt"
-        Me.BookTitletxt.Size = New System.Drawing.Size(100, 22)
+        Me.BookTitletxt.Size = New System.Drawing.Size(113, 20)
         Me.BookTitletxt.TabIndex = 3
         '
         'AuthorNametxt
         '
-        Me.AuthorNametxt.Location = New System.Drawing.Point(225, 158)
+        Me.AuthorNametxt.Location = New System.Drawing.Point(132, 35)
+        Me.AuthorNametxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.AuthorNametxt.Name = "AuthorNametxt"
-        Me.AuthorNametxt.Size = New System.Drawing.Size(100, 22)
+        Me.AuthorNametxt.Size = New System.Drawing.Size(113, 20)
         Me.AuthorNametxt.TabIndex = 4
         '
         'ISBNtxt
         '
-        Me.ISBNtxt.Location = New System.Drawing.Point(225, 210)
+        Me.ISBNtxt.Location = New System.Drawing.Point(132, 59)
+        Me.ISBNtxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ISBNtxt.Name = "ISBNtxt"
-        Me.ISBNtxt.Size = New System.Drawing.Size(100, 22)
+        Me.ISBNtxt.Size = New System.Drawing.Size(113, 20)
         Me.ISBNtxt.TabIndex = 5
         '
         'PublishedDatetxt
         '
-        Me.PublishedDatetxt.Location = New System.Drawing.Point(225, 270)
+        Me.PublishedDatetxt.Location = New System.Drawing.Point(132, 83)
+        Me.PublishedDatetxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PublishedDatetxt.Name = "PublishedDatetxt"
-        Me.PublishedDatetxt.Size = New System.Drawing.Size(100, 22)
+        Me.PublishedDatetxt.Size = New System.Drawing.Size(113, 20)
         Me.PublishedDatetxt.TabIndex = 6
         '
         'Caregorytxt
         '
-        Me.Caregorytxt.Location = New System.Drawing.Point(225, 330)
+        Me.Caregorytxt.Location = New System.Drawing.Point(132, 107)
+        Me.Caregorytxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Caregorytxt.Name = "Caregorytxt"
-        Me.Caregorytxt.Size = New System.Drawing.Size(100, 22)
+        Me.Caregorytxt.Size = New System.Drawing.Size(113, 20)
         Me.Caregorytxt.TabIndex = 7
         '
         'Quantitytxt
         '
-        Me.Quantitytxt.Location = New System.Drawing.Point(225, 395)
+        Me.Quantitytxt.Location = New System.Drawing.Point(132, 131)
+        Me.Quantitytxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Quantitytxt.Name = "Quantitytxt"
-        Me.Quantitytxt.Size = New System.Drawing.Size(100, 22)
+        Me.Quantitytxt.Size = New System.Drawing.Size(113, 20)
         Me.Quantitytxt.TabIndex = 8
         '
         'UserIDtxt
         '
-        Me.UserIDtxt.Location = New System.Drawing.Point(225, 451)
+        Me.UserIDtxt.Location = New System.Drawing.Point(132, 155)
+        Me.UserIDtxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.UserIDtxt.Name = "UserIDtxt"
-        Me.UserIDtxt.Size = New System.Drawing.Size(100, 22)
+        Me.UserIDtxt.Size = New System.Drawing.Size(113, 20)
         Me.UserIDtxt.TabIndex = 9
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(39, 108)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
+        Me.Label1.Location = New System.Drawing.Point(11, 10)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(71, 17)
+        Me.Label1.Size = New System.Drawing.Size(69, 19)
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "Book Title"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(40, 163)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
+        Me.Label2.Location = New System.Drawing.Point(11, 34)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(91, 17)
+        Me.Label2.Size = New System.Drawing.Size(93, 19)
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Author Name"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(39, 215)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
+        Me.Label3.Location = New System.Drawing.Point(11, 58)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(77, 17)
+        Me.Label3.Size = New System.Drawing.Size(76, 19)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Enter ISBN"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(39, 273)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
+        Me.Label4.Location = New System.Drawing.Point(11, 82)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(104, 17)
+        Me.Label4.Size = New System.Drawing.Size(101, 19)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Published Date"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(39, 330)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
+        Me.Label5.Location = New System.Drawing.Point(11, 106)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(66, 17)
+        Me.Label5.Size = New System.Drawing.Size(65, 19)
         Me.Label5.TabIndex = 14
-        Me.Label5.Text = "Caregory"
+        Me.Label5.Text = "Category"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(40, 393)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
+        Me.Label6.Location = New System.Drawing.Point(11, 130)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(61, 17)
+        Me.Label6.Size = New System.Drawing.Size(63, 19)
         Me.Label6.TabIndex = 15
         Me.Label6.Text = "Quantity"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(40, 456)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
+        Me.Label7.Location = New System.Drawing.Point(11, 154)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(55, 17)
+        Me.Label7.Size = New System.Drawing.Size(55, 19)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "User ID"
         '
         'NewRecords
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1119, 654)
+        Me.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.ClientSize = New System.Drawing.Size(839, 326)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -205,7 +231,6 @@ Partial Class NewRecords
         Me.Controls.Add(Me.btnInsert)
         Me.Controls.Add(Me.RecordsDGV)
         Me.Controls.Add(Me.btnBack)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "NewRecords"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "NewRecords"
