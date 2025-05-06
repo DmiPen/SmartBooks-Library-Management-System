@@ -10,9 +10,8 @@ Public Class AdminPanel
     Private Sub AdminPanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         usersAdapter.Connection.ConnectionString =
           "Data Source=(LocalDB)\MSSQLLocalDB;" &
-          "AttachDbFilename=C:\Users\descl\Source\Repos\SmartBooks-Library-Management-System\" &
-          "SmartBooks-Library-Management-System\LibraryManagement.mdf;" &
-          "Integrated Security=True"
+            "AttachDbFilename=|DataDirectory|\LibraryManagement.mdf;" &
+            "Integrated Security=True"
 
         LoadUsers()
     End Sub

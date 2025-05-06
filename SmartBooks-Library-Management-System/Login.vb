@@ -11,9 +11,7 @@ Public Class login
         ' ── Point the adapter at your project’s MDF, not the bin\Debug copy ──
         _usersAdapter.Connection.ConnectionString =
             "Data Source=(LocalDB)\MSSQLLocalDB;" &
-            "AttachDbFilename=C:\Users\descl\Source\Repos\" &
-            "SmartBooks-Library-Management-System\SmartBooks-Library-Management-System\" &
-            "LibraryManagement.mdf;" &
+            "AttachDbFilename=|DataDirectory|\LibraryManagement.mdf;" &
             "Integrated Security=True"
     End Sub
 

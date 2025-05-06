@@ -2,12 +2,11 @@
 Imports System.Data.SqlClient
 
     Public Class NewRecords
-        Private ReadOnly _conString As String =
+    Private ReadOnly _conString As String =
       "Data Source=(LocalDB)\MSSQLLocalDB;" &
-      "AttachDbFilename=C:\Users\descl\Source\Repos\" &
-      "SmartBooks-Library-Management-System\SmartBooks-Library-Management-System\" &
-      "LibraryManagement.mdf;Integrated Security=True"
-        Private _con As SqlConnection
+            "AttachDbFilename=|DataDirectory|\LibraryManagement.mdf;" &
+            "Integrated Security=True"
+    Private _con As SqlConnection
 
         Private Sub NewRecords_Load(sender As Object, e As EventArgs) Handles MyBase.Load
             _con = New SqlConnection(_conString)
