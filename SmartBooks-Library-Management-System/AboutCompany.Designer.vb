@@ -138,7 +138,6 @@ Partial Class AboutCompany
         Me.Controls.Add(Me.pbxManager)
         Me.Name = "AboutCompany"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "AboutCompany"
         CType(Me.pbxDatabaseAdministrator, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxWebDeveloper, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxGraphicDesigner, System.ComponentModel.ISupportInitialize).EndInit()

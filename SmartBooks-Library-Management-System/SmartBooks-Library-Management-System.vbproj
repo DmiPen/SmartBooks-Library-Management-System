@@ -266,6 +266,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>LibraryManagement.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\bg.png" />
+    <Content Include="Resources\MainIcoo.png" />
+    <None Include="Resources\MainIcoo1.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
