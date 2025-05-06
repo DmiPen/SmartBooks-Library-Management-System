@@ -31,10 +31,10 @@ Partial Class DeleteRecords
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(35, 488)
-        Me.btnBack.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBack.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.Location = New System.Drawing.Point(11, 454)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(100, 28)
+        Me.btnBack.Size = New System.Drawing.Size(56, 28)
         Me.btnBack.TabIndex = 0
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
@@ -42,41 +42,47 @@ Partial Class DeleteRecords
         'RecordsDGV
         '
         Me.RecordsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.RecordsDGV.Location = New System.Drawing.Point(200, 147)
+        Me.RecordsDGV.Location = New System.Drawing.Point(11, 11)
+        Me.RecordsDGV.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.RecordsDGV.Name = "RecordsDGV"
         Me.RecordsDGV.RowHeadersWidth = 51
         Me.RecordsDGV.RowTemplate.Height = 24
-        Me.RecordsDGV.Size = New System.Drawing.Size(635, 223)
+        Me.RecordsDGV.Size = New System.Drawing.Size(476, 438)
         Me.RecordsDGV.TabIndex = 1
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(300, 451)
+        Me.btnDelete.BackColor = System.Drawing.Color.MistyRose
+        Me.btnDelete.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.Location = New System.Drawing.Point(410, 454)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(75, 28)
+        Me.btnDelete.Size = New System.Drawing.Size(77, 28)
         Me.btnDelete.TabIndex = 2
         Me.btnDelete.Text = "Delete"
-        Me.btnDelete.UseVisualStyleBackColor = True
+        Me.btnDelete.UseVisualStyleBackColor = False
         '
         'btnRefresh
         '
-        Me.btnRefresh.Location = New System.Drawing.Point(661, 451)
+        Me.btnRefresh.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRefresh.Location = New System.Drawing.Point(329, 454)
+        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnRefresh.Name = "btnRefresh"
-        Me.btnRefresh.Size = New System.Drawing.Size(75, 28)
+        Me.btnRefresh.Size = New System.Drawing.Size(77, 28)
         Me.btnRefresh.TabIndex = 3
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = True
         '
         'DeleteRecords
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ClientSize = New System.Drawing.Size(501, 494)
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.RecordsDGV)
         Me.Controls.Add(Me.btnBack)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "DeleteRecords"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "DeleteRecords"
