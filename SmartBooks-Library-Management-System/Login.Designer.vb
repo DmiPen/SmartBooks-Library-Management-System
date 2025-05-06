@@ -93,7 +93,7 @@ Partial Class login
         Me.btnRegister.Location = New System.Drawing.Point(170, 173)
         Me.btnRegister.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRegister.Name = "btnRegister"
-        Me.btnRegister.Size = New System.Drawing.Size(56, 24)
+        Me.btnRegister.Size = New System.Drawing.Size(60, 24)
         Me.btnRegister.TabIndex = 6
         Me.btnRegister.Text = "Register"
         Me.btnRegister.UseVisualStyleBackColor = False
