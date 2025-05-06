@@ -161,4 +161,46 @@ Public Class HomePage
         End If
     End Sub
 
+    Private Sub lblViewRecords_Click(sender As Object, e As EventArgs) Handles lblViewRecords.Click
+        ViewRecordsToolStripMenuItem_Click(sender, e)
+    End Sub
+
+    Private Sub lblEditRecords_Click(sender As Object, e As EventArgs) Handles lblEditRecords.Click
+        EditRecordToolStripMenuItem_Click(sender, e)
+    End Sub
+
+    Private Sub lblAddRecords_Click(sender As Object, e As EventArgs) Handles lblAddRecords.Click
+        NewRecordsToolStripMenuItem_Click(sender, e)
+    End Sub
+
+    Private Sub lblDeleteRecords_Click(sender As Object, e As EventArgs) Handles lblDeleteRecords.Click
+        DeleteRecordToolStripMenuItem_Click(sender, e)
+    End Sub
+
+    Private Sub lblAdminPanel_Click(sender As Object, e As EventArgs) Handles lblAdminPanel.Click
+        If Session.CurrentUserAccess = "Admin" Then
+            Me.Hide()
+            AdminPanel.Show()
+        Else
+            MessageBox.Show("Access denied. Admins only.", "Unauthorized",
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
+
+    Private Sub lblAboutCompany_Click(sender As Object, e As EventArgs) Handles lblAboutCompany.Click
+        AboutCompanyToolStripMenuItem_Click(sender, e)
+    End Sub
+
+    Private Sub lblAboutProgram_Click(sender As Object, e As EventArgs) Handles lblAboutProgram.Click
+        AboutProgramToolStripMenuItem_Click(sender, e)
+    End Sub
+
+    Private Sub lblHowTo_Click(sender As Object, e As EventArgs) Handles lblHowTo.Click
+        HowToToolStripMenuItem_Click(sender, e)
+    End Sub
+
+    Private Sub lblLogout_Click(sender As Object, e As EventArgs) Handles lblLogout.Click
+        LogOutToolStripMenuItem_Click(sender, e)
+
+    End Sub
 End Class
